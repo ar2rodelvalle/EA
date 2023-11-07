@@ -1,57 +1,67 @@
-Project 1: Visualization of ALM Data
-Objective: Utilize visualization tools to create informative dashboards that provide real-time project tracking and insights, answering critical questions from the initial proposal document.
+Project 1: Strategic Visualization of ALM Data with Global Project Landscape Graph
+Executive Summary
+Project 1 will harness the power of data visualization to provide 'MyCorporation' with actionable insights into our project landscape. This initiative is about more than just tracking; it's about visually communicating our project data through a Global Project Landscape Graph and a suite of dashboards.
 
-Questions Addressed:
+Objectives
+To create a suite of visual tools that will track and display a range of project performance metrics in real-time.
+To integrate a graph-based visualization offering a global perspective of the enterprise's projects with respect to key metrics.
+Detailed Approach
+1. Visualization Tool Selection:
 
-What are we doing? (Project Details)
-How much are we spending on it? (Resources Required)
-Are we on track? (Estimated vs. Actual Completion Time)
-Do we have slack capacity? (Team Load)
-What's at risk? (Risk Assessment)
-Steps to Develop the Visualization:
+Background: Selecting the right tools is critical for developing dynamic, interactive dashboards and a graph-based visualization of project data.
+How-To: Evaluate and choose BI tools for their visualization capabilities, factoring in the ability to support a graph-based overview of projects.
+Outcome: A carefully chosen set of BI tools capable of sophisticated data representation. (Visuals 1. Overview Metrics, 2. Resource Allocation Metrics, 3. Capacity and Load Metrics, 4. Risk Assessment Metrics, 5. Project Tracking Metrics, 6. Dependency Metrics, 7. Queueing Metrics)
+2. Global Project Landscape Graph Development:
 
-Select Visualization Tools:
+Background: To encapsulate the enterprise's project status in a single, comprehensive visual.
+How-To: Deploy graph plotting libraries to represent projects as nodes within a network, with metrics influencing node color, size, and shape.
+Outcome: A graph-based visualization that provides an immediate, intuitive grasp of the project portfolio's health and status. (Visuals 1. Overview Metrics, 4. Risk Assessment Metrics, 5. Project Tracking Metrics)
+3. Dashboard Design and Development:
 
-Business Intelligence (BI) Tools: Tableau, Power BI, or Qlik for their robust visualization capabilities.
-Open Source Libraries: D3.js for customized web-based visualizations or Matplotlib and Seaborn for Python-based analytics.
-Design Dashboards:
+Background: Dashboards are critical for turning data into a story that stakeholders can quickly understand and act upon.
+How-To: Construct dashboards that integrate the Global Project Landscape Graph with traditional data displays like Gantt charts for timeline tracking and heatmaps for risk analysis.
+Outcome: A set of interactive dashboards that offer a detailed breakdown of project metrics. (Visuals 1. Overview Metrics, 2. Resource Allocation Metrics, 3. Capacity and Load Metrics, 4. Risk Assessment Metrics, 5. Project Tracking Metrics)
+4. Data Preparation and Integration:
 
-Project Overview Dashboard: To address "What are we doing?" by listing all projects with statuses and business priorities.
-Resource Allocation Dashboard: Showing "How much are we spending on it?" with visualizations of resources allocated per project.
-Project Tracking Dashboard: To answer "Are we on track?" with timelines, gantt charts comparing estimated vs. actual completion times.
-Capacity Utilization Dashboard: Answering "Do we have slack capacity?" by displaying team loads and availability.
-Risk Dashboard: Addressing "What's at risk?" with a risk heatmap or matrix showing the probability and impact of risks.
-Data Preparation:
+Background: The foundation of reliable visualization is a robust dataset.
+How-To: Prepare and normalize the data to be compatible with direct queries from our chosen BI tools, ensuring that the dashboards always reflect the most current information.
+Outcome: A dataset ready for real-time analysis and display. (Visuals 1. Overview Metrics, 2. Resource Allocation Metrics, 3. Capacity and Load Metrics, 4. Risk Assessment Metrics, 5. Project Tracking Metrics, 6. Dependency Metrics, 7. Queueing Metrics)
+5. Metrics Implementation and Evaluation:
 
-Ensure the database is structured to support BI tools.
-Normalize data fields to ensure consistency across visualizations.
-Integration and Testing:
+Background: Establishing clear metrics will allow us to track project performance and make informed decisions.
+How-To: Implement and display key performance indicators within the dashboards, such as project counts, resource allocation, and risk levels.
+Outcome: A suite of metrics that stakeholders can use to gauge performance and identify areas for action. (Visuals 1. Overview Metrics, 2. Resource Allocation Metrics, 3. Capacity and Load Metrics, 4. Risk Assessment Metrics, 5. Project Tracking Metrics, 6. Dependency Metrics, 7. Queueing Metrics)
 
-Connect visualization tools to the database using APIs or direct query access.
-Test dashboards for data accuracy and refresh rates.
-Metrics Implementation:
 
-Performance Metrics: Track project completion percentage, on-time delivery rate, and resource utilization efficiency.
-Capacity Metrics: Monitor available vs. utilized team hours and skill-set mapping.
-Risk Metrics: Create a composite risk score based on impact and probability for each project.
-Dashboard Release:
+METRICS EXPLAINED BELOW.
+Total count of ongoing projects.
+Number of projects categorized by business priority (High, Medium, Low).
+Average estimated time to completion for all projects.
+Categorization of projects by their current phase or status.
+Resource Allocation Metrics:
 
-Roll out dashboards in a controlled environment to gather user feedback.
-Conduct training sessions to ensure stakeholders understand how to interpret the visualizations.
-Feedback and Iteration:
+Sum of all resources required for current projects.
+Visualization of people allocated per project.
+Current resource utilization rate against total availability.
+Capacity and Load Metrics:
 
-Collect feedback on dashboard utility and data accuracy.
-Iterate on the dashboards to refine visuals and data points based on user input.
-Potential Technologies to Test:
+Total available hours and efficiency rating per team.
+Distribution of team skill sets.
+Comparison of current and planned workload for each team.
+Risk Assessment Metrics:
 
-BI Tools: Tableau for user-friendly dashboards, Power BI for integration with existing Microsoft services, or Qlik for associative data modeling.
-Data Processing: Apache Spark for data processing if dealing with very large datasets.
-Web Development: React or Angular for creating interactive web-based dashboards if opting for custom development.
-Metrics to Answer Our Proposed Questions:
+Distribution of projects by risk level.
+Analysis of risks impacting schedule, budget, and quality.
+Probability of risks across projects.
+Project Tracking Metrics:
 
-Project Progress: Percentage of tasks completed vs. total tasks.
-Budget Utilization: Actual vs. planned spend per project.
-Timeline Adherence: Number of projects on schedule vs. total projects.
-Team Utilization: Percentage of available hours used by teams.
-Risk Exposure: Number of high-risk projects vs. total projects.
-This initial project will set the stage for a comprehensive Enterprise Priority Initiative by ensuring that stakeholders have access to real-time, actionable insights. The visualizations will not only provide answers to the fundamental questions posed in the initial proposal but also empower decision-makers to identify areas for process optimization and strategic adjustment.
+Adherence of projects to their estimated timelines.
+Number of projects experiencing delays.
+Historical success rate of completed projects.
+Dependency Metrics:
+
+Visualization of project dependencies as a network graph (without Project 2's complex dependency details).
+Queueing Metrics:
+
+Rate of new project initiation.
+Rate at which teams complete projects.
